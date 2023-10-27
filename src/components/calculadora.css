@@ -1,0 +1,42 @@
+main {
+  position: relative;
+    background-color: var(--fondo-calculadora);
+    aspect-ratio: 9/16;
+    border-radius: 1rem;
+    height: 95%;
+    box-shadow: var(--box-shadow);
+    padding: .5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+span {
+    grid-column: span 4;
+    text-align: right;
+    padding: 0 .5rem;
+  }
+
+span.resultado {
+    color: var(--secundario);
+    font-size: 3rem;
+    height: 3rem;
+}
+
+span.display {
+    font-size: 4rem;
+    height: 4rem;
+}
+
+.guion-phone {
+  width: 150px;
+  border-radius: 40px;
+  margin-bottom: 10px;
+  height: 8px;
+  background-color: var(--terciario);
+   position: absolute;
+   top: 101%;
+   left: 50%; 
+   transform: translateX(-50%);
+}
+
